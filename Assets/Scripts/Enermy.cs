@@ -19,4 +19,6 @@ public class Enermy : MonoBehaviour
         dir.Normalize();
         transform.position = transform.position + dir * speed * Time.deltaTime;
     }
+
+
 }

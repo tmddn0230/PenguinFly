@@ -23,7 +23,7 @@ public class EnermyManager : MonoBehaviour
             GameObject item = Instantiate(enermyFactory);           //공장으로 부터 enermy 생산, Instantiate 가 만드는 느낌 
             item.transform.position = enermyManager.transform.position;
             currentTime = 0; //currentTime 초기화 1초->0 
-            createTime = Random.Range(0f, 10f);      //createTime을 랜덤하게 설정하여 지루하지 않은 enermy 생산 가능
+            createTime = Random.Range(1f, 7f);      //createTime을 랜덤하게 설정하여 지루하지 않은 enermy 생산 가능
         }
 
     }
