@@ -10,12 +10,12 @@ public class EnermyManager : MonoBehaviour
     public GameObject enermyFactory4;
     public GameObject enermyFactory5;
     public GameObject enermyManager;  //에너미 생산 위치 설정
-    int createTime=0 ; //생성시간 
+    float createTime=0 ; //생성시간 
     float currentTime; // 흐르는 시간 (현재시간)
     // Start is called before the first frame update
     void Start()
     {
-        
+        createTime = Random.Range(1f, 6f);
     }
 
     // Update is called once per frame
@@ -26,22 +26,22 @@ public class EnermyManager : MonoBehaviour
         {
             
             
-            if (createTime == 1 )
+            if (createTime <= 2 )
             {
                 GameObject item = Instantiate(enermyFactory);
                 item.transform.position = enermyManager.transform.position;
             }
-            else if(createTime == 2)
+            else if(createTime <= 3 )
             {
                 GameObject item2 = Instantiate(enermyFactory2);
                 item2.transform.position = enermyManager.transform.position;
             }
-            else if(createTime == 3)
+            else if(createTime <= 4)
             {
                 GameObject item3 = Instantiate(enermyFactory3);
                 item3.transform.position = enermyManager.transform.position;
             }
-            else if(createTime == 4)
+            else if(createTime <= 5)
             {
                 GameObject item4 = Instantiate(enermyFactory4);
                 item4.transform.position = enermyManager.transform.position;
@@ -53,7 +53,7 @@ public class EnermyManager : MonoBehaviour
                 item5.transform.position = enermyManager.transform.position;
             }
             currentTime = 0;
-            createTime = Random.Range(1, 5);
+            createTime = Random.Range(1f, 6f);
 
 
         }
