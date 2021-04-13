@@ -4,9 +4,13 @@ using UnityEngine;
 
 public class EnermyManager : MonoBehaviour
 {
-    public GameObject enermyFactory;  //에너미 공장 만듦
+    public GameObject enermyFactory;
+    public GameObject enermyFactory2;
+    public GameObject enermyFactory3;
+    public GameObject enermyFactory4;
+    public GameObject enermyFactory5;
     public GameObject enermyManager;  //에너미 생산 위치 설정
-    float createTime = 1; //생성시간 
+    int createTime=0 ; //생성시간 
     float currentTime; // 흐르는 시간 (현재시간)
     // Start is called before the first frame update
     void Start()
@@ -20,11 +24,40 @@ public class EnermyManager : MonoBehaviour
         currentTime += Time.deltaTime; //currentTime을 흐르게 한다(증가시킨다), deltaTime 을 넣어 진짜 시계처럼 흐르게 
         if (createTime < currentTime)               // 일정시간 < 흘러간 시간
         {
-            GameObject item = Instantiate(enermyFactory);           //공장으로 부터 enermy 생산, Instantiate 가 만드는 느낌 
-            item.transform.position = enermyManager.transform.position;
-            currentTime = 0; //currentTime 초기화 1초->0 
-            createTime = Random.Range(1f, 7f);      //createTime을 랜덤하게 설정하여 지루하지 않은 enermy 생산 가능
+            
+            
+            if (createTime == 1 )
+            {
+                GameObject item = Instantiate(enermyFactory);
+                item.transform.position = enermyManager.transform.position;
+            }
+            else if(createTime == 2)
+            {
+                GameObject item2 = Instantiate(enermyFactory2);
+                item2.transform.position = enermyManager.transform.position;
+            }
+            else if(createTime == 3)
+            {
+                GameObject item3 = Instantiate(enermyFactory3);
+                item3.transform.position = enermyManager.transform.position;
+            }
+            else if(createTime == 4)
+            {
+                GameObject item4 = Instantiate(enermyFactory4);
+                item4.transform.position = enermyManager.transform.position;
+            }
+            else
+            {
+
+                GameObject item5 = Instantiate(enermyFactory5); 
+                item5.transform.position = enermyManager.transform.position;
+            }
+            currentTime = 0;
+            createTime = Random.Range(1, 5);
+
+
         }
+       
 
     }
 }
