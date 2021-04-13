@@ -22,7 +22,7 @@ public class Item : MonoBehaviour
     private void OnCollisionEnter(Collision collision)     // 충돌할 때 실행됨  Collision을 담는 Collision 변수 
     {
         
-        Destroy(gameObject);   
-
+        Destroy(gameObject);
+        
     }
 }
