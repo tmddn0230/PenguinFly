@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerMove : MonoBehaviour
 {
+    
     public float speed = 3;
     
     
@@ -23,4 +24,6 @@ public class PlayerMove : MonoBehaviour
         transform.position += dirh * speed * Time.deltaTime;
 
     }
+
+    
 }
