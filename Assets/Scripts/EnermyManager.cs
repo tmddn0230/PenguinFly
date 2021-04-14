@@ -33,24 +33,24 @@ public class EnermyManager : MonoBehaviour
             }
             else if(createTime <= 3 )
             {
-                GameObject item2 = Instantiate(enermyFactory2);
-                item2.transform.position = enermyManager.transform.position;
+                GameObject item = Instantiate(enermyFactory2);
+                item.transform.position = enermyManager.transform.position;
             }
             else if(createTime <= 4)
             {
-                GameObject item3 = Instantiate(enermyFactory3);
-                item3.transform.position = enermyManager.transform.position;
+                GameObject item = Instantiate(enermyFactory3);
+                item.transform.position = enermyManager.transform.position;
             }
             else if(createTime <= 5)
             {
-                GameObject item4 = Instantiate(enermyFactory4);
-                item4.transform.position = enermyManager.transform.position;
+                GameObject item = Instantiate(enermyFactory4);
+                item.transform.position = enermyManager.transform.position;
             }
             else
             {
 
-                GameObject item5 = Instantiate(enermyFactory5); 
-                item5.transform.position = enermyManager.transform.position;
+                GameObject item = Instantiate(enermyFactory5); 
+                item.transform.position = enermyManager.transform.position;
             }
             currentTime = 0;
             createTime = Random.Range(1f, 6f);
