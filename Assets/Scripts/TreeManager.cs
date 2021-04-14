@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class TreeManager : MonoBehaviour
 {
-    //Vector3 tree;
+    
     public GameObject treeFactory;
     public GameObject treeFactory2;
     public GameObject treeFactory3;
@@ -19,12 +19,7 @@ public class TreeManager : MonoBehaviour
 
     void Start()
     {
-        //int tree = Random.Range(1, 7);
-
-        //if (tree < 3)
-        //{
-        //    tree = Vector3.down;
-        //}
+        createTime = Random.Range(1f, 10f);
 
     }
 

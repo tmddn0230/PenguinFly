@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 33000012839577712}
   - component: {fileID: 23000012320464954}
   - component: {fileID: 64000010139851322}
+  - component: {fileID: -8402030992114855676}
   m_Layer: 0
   m_Name: Pine_NoSnow2
   m_TagString: Untagged
@@ -26,9 +27,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1000011750255288}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.6272901, y: 0, z: -0.092222534}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -97,3 +98,16 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300002, guid: e6ec39770b6dbe04f9cbd7ea19e0c7ef, type: 3}
+--- !u!114 &-8402030992114855676
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1000011750255288}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d24b2495a4b661d4da42d2823e7fa54a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 3

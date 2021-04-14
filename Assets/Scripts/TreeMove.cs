@@ -6,7 +6,7 @@ public class TreeMove : MonoBehaviour
 {
     public float speed = 3f;
     
-    Vector3 dir;
+    Vector3 tree;
 
 
     void Start()
@@ -14,16 +14,16 @@ public class TreeMove : MonoBehaviour
         
     }
 
-    // 
+     
     void Update()
     {
         //int rand = Random.Range(1, 11);
 
-        dir = Vector3.back;
+        tree = Vector3.back;
 
-        transform.position += dir * speed * Time.deltaTime;
+        transform.position += tree * speed * Time.deltaTime;
 
-        dir.Normalize();
+        tree.Normalize();
 
     }
 }
