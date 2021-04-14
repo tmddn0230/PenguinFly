@@ -407,10 +407,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemFactory: {fileID: 4903743872968750058, guid: ba94ce2f1755dea47845f813e7480ae2,
     type: 3}
-  itemFactory2: {fileID: 0}
-  itemFactory3: {fileID: 0}
-  itemFactory4: {fileID: 0}
-  itemFactory5: {fileID: 0}
+  itemFactory2: {fileID: 7748004947768682203, guid: ed67b081eda1c914dad5d10b58f6e7eb,
+    type: 3}
+  itemFactory3: {fileID: 486436040477728302, guid: a3fcb80970455c0429871b01acfb79d9,
+    type: 3}
+  itemFactory4: {fileID: 2976877650893914936, guid: e893db8a45e70c04cbd877850d39ba60,
+    type: 3}
+  itemFactory5: {fileID: 8841159565728166008, guid: 57dce56fcd5293c4fad27321501cf9bb,
+    type: 3}
   itemManager: {fileID: 96455348}
 --- !u!65 &96455350
 BoxCollider:
@@ -772,10 +776,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemFactory: {fileID: 4903743872968750058, guid: ba94ce2f1755dea47845f813e7480ae2,
     type: 3}
-  itemFactory2: {fileID: 0}
-  itemFactory3: {fileID: 0}
-  itemFactory4: {fileID: 0}
-  itemFactory5: {fileID: 0}
+  itemFactory2: {fileID: 7748004947768682203, guid: ed67b081eda1c914dad5d10b58f6e7eb,
+    type: 3}
+  itemFactory3: {fileID: 486436040477728302, guid: a3fcb80970455c0429871b01acfb79d9,
+    type: 3}
+  itemFactory4: {fileID: 2976877650893914936, guid: e893db8a45e70c04cbd877850d39ba60,
+    type: 3}
+  itemFactory5: {fileID: 8841159565728166008, guid: 57dce56fcd5293c4fad27321501cf9bb,
+    type: 3}
   itemManager: {fileID: 521524094}
 --- !u!65 &521524096
 BoxCollider:
@@ -1006,10 +1014,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemFactory: {fileID: 4903743872968750058, guid: ba94ce2f1755dea47845f813e7480ae2,
     type: 3}
-  itemFactory2: {fileID: 0}
-  itemFactory3: {fileID: 0}
-  itemFactory4: {fileID: 0}
-  itemFactory5: {fileID: 0}
+  itemFactory2: {fileID: 7748004947768682203, guid: ed67b081eda1c914dad5d10b58f6e7eb,
+    type: 3}
+  itemFactory3: {fileID: 486436040477728302, guid: a3fcb80970455c0429871b01acfb79d9,
+    type: 3}
+  itemFactory4: {fileID: 2976877650893914936, guid: e893db8a45e70c04cbd877850d39ba60,
+    type: 3}
+  itemFactory5: {fileID: 8841159565728166008, guid: 57dce56fcd5293c4fad27321501cf9bb,
+    type: 3}
   itemManager: {fileID: 578346848}
 --- !u!65 &578346850
 BoxCollider:
@@ -1099,8 +1111,72 @@ PrefabInstance:
       value: Penguin
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 28f113bc1593119448bfebc93373c1ad, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 28f113bc1593119448bfebc93373c1ad, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 28f113bc1593119448bfebc93373c1ad, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: 28f113bc1593119448bfebc93373c1ad, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: 28f113bc1593119448bfebc93373c1ad, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 100008, guid: 28f113bc1593119448bfebc93373c1ad, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 100010, guid: 28f113bc1593119448bfebc93373c1ad, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 100012, guid: 28f113bc1593119448bfebc93373c1ad, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 100014, guid: 28f113bc1593119448bfebc93373c1ad, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 100016, guid: 28f113bc1593119448bfebc93373c1ad, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 100018, guid: 28f113bc1593119448bfebc93373c1ad, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 100020, guid: 28f113bc1593119448bfebc93373c1ad, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 100022, guid: 28f113bc1593119448bfebc93373c1ad, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 100024, guid: 28f113bc1593119448bfebc93373c1ad, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 100026, guid: 28f113bc1593119448bfebc93373c1ad, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 100028, guid: 28f113bc1593119448bfebc93373c1ad, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 100030, guid: 28f113bc1593119448bfebc93373c1ad, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 28f113bc1593119448bfebc93373c1ad, type: 3}
       propertyPath: m_RootOrder
@@ -1791,7 +1867,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1521044988}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -0.24, y: -1.61e-13, z: -0.6}
+  m_LocalPosition: {x: -0.24, y: -1.76, z: -0.6}
   m_LocalScale: {x: 75.5028, y: 51.296574, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2163,7 +2239,7 @@ GameObject:
   - component: {fileID: 1874017126}
   - component: {fileID: 1874017125}
   - component: {fileID: 1874017124}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2413,10 +2489,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemFactory: {fileID: 4903743872968750058, guid: ba94ce2f1755dea47845f813e7480ae2,
     type: 3}
-  itemFactory2: {fileID: 0}
-  itemFactory3: {fileID: 0}
-  itemFactory4: {fileID: 0}
-  itemFactory5: {fileID: 0}
+  itemFactory2: {fileID: 7748004947768682203, guid: ed67b081eda1c914dad5d10b58f6e7eb,
+    type: 3}
+  itemFactory3: {fileID: 486436040477728302, guid: a3fcb80970455c0429871b01acfb79d9,
+    type: 3}
+  itemFactory4: {fileID: 2976877650893914936, guid: e893db8a45e70c04cbd877850d39ba60,
+    type: 3}
+  itemFactory5: {fileID: 8841159565728166008, guid: 57dce56fcd5293c4fad27321501cf9bb,
+    type: 3}
   itemManager: {fileID: 1968431867}
 --- !u!65 &1968431869
 BoxCollider:
