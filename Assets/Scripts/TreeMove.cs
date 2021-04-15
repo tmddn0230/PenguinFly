@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class TreeMove : MonoBehaviour
 {
-    public float speed = 3f;
+    public float speed = 10f;
     
     Vector3 tree;
 
