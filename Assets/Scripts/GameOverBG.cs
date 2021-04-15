@@ -7,6 +7,6 @@ public class GameOverBG : MonoBehaviour
 {
     public void OnClickRetry()
     {
-        SceneManager.LoadScene("Main");
+        SceneManager.LoadScene("YSW");
     }
 }

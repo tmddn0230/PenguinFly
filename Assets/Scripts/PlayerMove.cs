@@ -38,13 +38,13 @@ public class PlayerMove : MonoBehaviour
             gorbg.SetActive(true); //활성화   
 
         }*/
-        if (collision.gameObject.name.Contains("Item"))
+        if (collision.gameObject.name.Contains("Enermy"))
         {
-
+            gorbg.SetActive(true); //활성화   
         }
         else
         {
-            gorbg.SetActive(true); //활성화   
+           
 
         }
         
