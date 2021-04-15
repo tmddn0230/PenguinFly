@@ -11,17 +11,17 @@ TagManager:
   - 
   - Water
   - UI
+  - 
+  - 
+  - Character
+  - Interactable
+  - Post Processing
   - Player
-  - Item
-  - ItemManager
-  - DestroyZone
+  - item
+  - Destroyzone
   - Enermy
-  - Cloud
-  - Tree
-  - 
-  - 
-  - 
-  - 
+  - cloud
+  - tree
   - 
   - 
   - 
