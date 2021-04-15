@@ -7,14 +7,11 @@ public class Enermy : MonoBehaviour
     
     public float speed = 5;
     Vector3 dir;
-    GameObject gorbg;
+    
     // Start is called before the first frame update
     void Start()
     {
-        gorbg = GameObject.Find("GameOverBG");
-        gorbg.SetActive(false);
-       
-
+      
     }
 
     // Update is called once per frame
@@ -31,14 +28,6 @@ public class Enermy : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-       /* if(collision.gameObject.name.Contains("Æë±Ï"))
-        {
-
-        }
-        else
-        {
-            gorbg.SetActive(true); //È°¼ºÈ­   
-
-        }*/
+       
     }
 }
