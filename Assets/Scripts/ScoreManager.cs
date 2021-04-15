@@ -2,25 +2,29 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class ScoreManager : MonoBehaviour
 {
     int currentScore;
     public Text currentScoreUI;
-    int clearScore = 10000;
+    static int clearScore = 500;
     public Text clearScoreUI;
 
     // Start is called before the first frame update
     void Start()
     {
         //SetHighScore(PlayerPrefs.GetInt("CS"));
-       clearScoreUI.text = "Clear Score: " + 10000;
+       clearScoreUI.text = "Clear Score: " + 500;
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if(currentScore == 500)
+        {
+            SceneManager.LoadScene("Clear");
+        }
     }
 
     public void AddScore(int AddValue)
