@@ -26,5 +26,10 @@ public class Enermy : MonoBehaviour
 
     }
 
-    
+    private void OnCollisionEnter(Collision collision)
+    {
+        collision.gameObject.SetActive(false);
+       
+    }
+
 }
