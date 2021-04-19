@@ -4,30 +4,50 @@ using UnityEngine;
 
 public class PlayerMove : MonoBehaviour
 {
-    
     public float speed = 3;
     GameObject gorbg;
+    public float gravity = -9.8f;
+    public float yVelocity;
+    public int jumppower = 15;
+    Vector3 dirh;
+    float h;
+    CharacterController cc;
 
     // Start is called before the first frame update
     void Start()
     {
         gorbg = GameObject.Find("GameOverBG");
         gorbg.SetActive(false);
+        cc = GetComponent<CharacterController>();
 
     }
 
     // Update is called once per frame
     void Update()
     {
-        float h = Input.GetAxis("Horizontal");
-        Vector3 dirh = Vector3.right * h;
 
-        dirh.Normalize();
-        transform.position += dirh * speed * Time.deltaTime;
+        h = Input.GetAxis("Horizontal");
+        dirh = Vector3.right * h;
+        //transform.position += dirh * speed * Time.deltaTime;
+
+        if (Input.GetButtonDown("Jump"))
+        {
+            yVelocity = jumppower;
+
+            //transform.position += dirh * speed * Time.deltaTime;
+
+
+        }
+        yVelocity += gravity * Time.deltaTime;
+        dirh.y = yVelocity;
+
+
+
+        cc.Move(dirh * speed * Time.deltaTime);
+        //transform.position += dirh * speed * Time.deltaTime;
 
     }
-
-    private void OnCollisionEnter(Collision collision)
+        private void OnCollisionEnter(Collision collision)
     {
         /*if (collision.gameObject.layer == 7)
         {
