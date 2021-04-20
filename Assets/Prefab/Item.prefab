@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 4903743872968750052}
   - component: {fileID: 4903743872968750059}
   - component: {fileID: 4903743872968750055}
-  - component: {fileID: 104200613082608064}
+  - component: {fileID: -2622964331443438687}
   m_Layer: 7
   m_Name: Item
   m_TagString: Untagged
@@ -96,8 +96,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 0.25571004, y: 1.8596735, z: 2.76469}
+  m_Center: {x: -0.030339701, y: 0.16933437, z: -0.11330481}
 --- !u!114 &4903743872968750055
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -111,7 +111,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
---- !u!54 &104200613082608064
+--- !u!54 &-2622964331443438687
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -382,7 +382,8 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5487756, guid: 604c6a2a7f9c3484a86af004a7dcaf6a, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 604c6a2a7f9c3484a86af004a7dcaf6a, type: 3}
 --- !u!4 &8851548835038412495 stripped
 Transform:
