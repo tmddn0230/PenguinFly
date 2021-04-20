@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class TreeManager : MonoBehaviour
 {
-    
+
     public GameObject treeFactory;
     public GameObject treeFactory2;
     public GameObject treeFactory3;
@@ -19,54 +19,54 @@ public class TreeManager : MonoBehaviour
 
     void Start()
     {
-        createTime = Random.Range(1f, 10f);
+        createTime = Random.Range(0f, 4f);
 
     }
 
-    
+
     void Update()
     {
         currTime += Time.deltaTime;
-        if (createTime < currTime)
+        if (createTime <= currTime)
         {
 
-            if (createTime <= 1)
+            if (createTime <= 2)
             {
                 GameObject tree = Instantiate(treeFactory);
                 tree.transform.position = transform.position;
             }
-        
-            else if (createTime <= 2)
+
+            else if (createTime <= 4)
             {
                 GameObject tree = Instantiate(treeFactory2);
                 tree.transform.position = transform.position;
             }
-            else if (createTime <= 4)
+            else if (createTime <= 6)
             {
                 GameObject tree = Instantiate(treeFactory3);
                 tree.transform.position = transform.position;
             }
-            else if (createTime <= 6)
+            else if (createTime <= 8)
             {
                 GameObject tree = Instantiate(treeFactory4);
                 tree.transform.position = transform.position;
             }
-            else if (createTime <= 8)
+            else if (createTime <= 10)
             {
                 GameObject tree = Instantiate(treeFactory5);
                 tree.transform.position = transform.position;
             }
-            else if (createTime <= 9)
+            else if (createTime <= 12)
             {
                 GameObject tree = Instantiate(treeFactory6);
                 tree.transform.position = transform.position;
             }
-            else if (createTime <= 10)
+            else if (createTime <= 14)
             {
                 GameObject tree = Instantiate(treeFactory7);
                 tree.transform.position = transform.position;
             }
-            else 
+            else
             {
                 GameObject tree8 = Instantiate(treeFactory8);
                 tree8.transform.position = transform.position;
@@ -74,7 +74,7 @@ public class TreeManager : MonoBehaviour
 
             currTime = 0;
 
-            createTime = Random.Range(1f, 15f);
+            createTime = Random.Range(1f, 10f);
         }
     }
 }
