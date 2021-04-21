@@ -12,14 +12,26 @@ public class PlayerMove : MonoBehaviour
     Vector3 dirh;
     float h;
     CharacterController cc;
+    public GameObject audio;
+    GameObject BG;
+    AudioSource bg;
+    public GameObject enemyaudio;
+    public GameObject fishaudio;
+
 
     // Start is called before the first frame update
     void Start()
     {
         gorbg = GameObject.Find("GameOverBG");
+        BG = GameObject.Find("BG");
+        bg = BG.GetComponent<AudioSource>();
         gorbg.SetActive(false);
         cc = GetComponent<CharacterController>();
-
+        audio.SetActive(false);
+        enemyaudio.SetActive(false);
+        fishaudio.SetActive(false);
+        
+        
     }
 
     // Update is called once per frame
@@ -28,11 +40,17 @@ public class PlayerMove : MonoBehaviour
 
         h = Input.GetAxis("Horizontal");
         dirh = Vector3.right * h;
+        dirh.Normalize();
         //transform.position += dirh * speed * Time.deltaTime;
 
+       
         if (Input.GetButtonDown("Jump"))
         {
-            yVelocity = jumppower;
+            if(cc.isGrounded == true )yVelocity = jumppower;
+            audio.SetActive(true);
+            AudioSource ad = audio.GetComponent<AudioSource>();
+            ad.Play();
+            
 
             //transform.position += dirh * speed * Time.deltaTime;
 
@@ -42,13 +60,16 @@ public class PlayerMove : MonoBehaviour
         dirh.y = yVelocity;
 
 
-
+        
         cc.Move(dirh * speed * Time.deltaTime);
         //transform.position += dirh * speed * Time.deltaTime;
 
     }
         private void OnCollisionEnter(Collision collision)
     {
+       
+       
+
         /*if (collision.gameObject.layer == 7)
         {
 
@@ -60,13 +81,21 @@ public class PlayerMove : MonoBehaviour
         }*/
         if (collision.gameObject.name.Contains("Enermy"))
         {
+            enemyaudio.SetActive(true);
             gorbg.SetActive(true); //È°¼ºÈ­   
+            bg.Stop();
+
+        }
+        else if(collision.gameObject.name.Contains("Item"))
+        {
+            fishaudio.SetActive(true);
         }
         else
         {
-           
 
         }
         
+       
+       
     }
 }

@@ -8,6 +8,7 @@ public class Enermy : MonoBehaviour
     float speed;
     Vector3 dir;
     
+    
     // Start is called before the first frame update
     void Start()
     {
