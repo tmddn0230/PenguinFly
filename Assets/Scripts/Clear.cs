@@ -20,7 +20,7 @@ public class Clear : MonoBehaviour
     void Update()
     {
         a += 0.01f * dir;
-        ClearTitle.color = new Color(0.95f, 0.92f , 0.4f, a);
+        ClearTitle.color = new Color( 1f, 1f , 1f, a );
 
         if (a >= 1 || a <= 0) dir *= -1;
     }
