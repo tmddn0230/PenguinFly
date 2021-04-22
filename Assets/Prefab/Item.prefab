@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 4903743872968750052}
   - component: {fileID: 4903743872968750059}
   - component: {fileID: 4903743872968750055}
-  - component: {fileID: -2622964331443438687}
+  - component: {fileID: 3280867265722980183}
   m_Layer: 7
   m_Name: Item
   m_TagString: Untagged
@@ -51,7 +51,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4903743872968750058}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -96,8 +96,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0, y: 0.7888554, z: 0}
-  m_Center: {x: 0.09751553, y: 0.3651281, z: -0.25055525}
+  m_Size: {x: 0.9102096, y: 0.72966003, z: 0.8956604}
+  m_Center: {x: -0.028399134, y: 0.17230748, z: -0.0077839787}
 --- !u!114 &4903743872968750055
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -111,8 +111,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
-  audioss: {fileID: 7239153200488784894, guid: 017a5e6eb2994be41a3d0c07c77461c0, type: 3}
---- !u!54 &-2622964331443438687
+--- !u!54 &3280867265722980183
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -274,6 +273,10 @@ PrefabInstance:
     - target: {fileID: 162542, guid: 604c6a2a7f9c3484a86af004a7dcaf6a, type: 3}
       propertyPath: m_Layer
       value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 162542, guid: 604c6a2a7f9c3484a86af004a7dcaf6a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 166694, guid: 604c6a2a7f9c3484a86af004a7dcaf6a, type: 3}
       propertyPath: m_Layer
