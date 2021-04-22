@@ -7,12 +7,13 @@ public class Enermy : MonoBehaviour
 
     float speed;
     Vector3 dir;
-    
-    
+    public GameObject[] models;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        int randModel = Random.Range(0, models.Length);         //int는 끝을 포함하지 않으므로 2가 아닌 3 
+        models[randModel].SetActive(true);
     }
 
     // Update is called once per frame
