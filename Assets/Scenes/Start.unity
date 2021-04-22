@@ -507,8 +507,8 @@ MonoBehaviour:
   textMove2: {fileID: 373717150}
   textMove3: {fileID: 1034976932}
   textMove4: {fileID: 1116227555}
-  delayTime1: 0.01
-  delayTime2: 0.005
+  delayTime1: 0.1
+  delayTime2: 0.1
 --- !u!114 &847405335
 MonoBehaviour:
   m_ObjectHideFlags: 0
