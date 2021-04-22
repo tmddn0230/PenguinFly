@@ -109,6 +109,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b457105aaed47247be67f1410f1757b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  EneAudio: {fileID: 4253694285230295031, guid: 2472440ae7642514b904e4875ef7f6f6,
+    type: 3}
 --- !u!54 &243570771251408177
 Rigidbody:
   m_ObjectHideFlags: 0
