@@ -17,6 +17,7 @@ public class PlayerMove : MonoBehaviour
     AudioSource bg;
     public GameObject enemyaudio;
     public GameObject fishaudio;
+    public GameObject it;
     
    
 
@@ -31,7 +32,7 @@ public class PlayerMove : MonoBehaviour
         audio.SetActive(false);
         enemyaudio.SetActive(false);
         fishaudio.SetActive(false);
-        
+        it.SetActive(false);
         
     }
 
@@ -66,7 +67,8 @@ public class PlayerMove : MonoBehaviour
         if (collision.gameObject.name.Contains("Enermy"))
         {
             enemyaudio.SetActive(true);
-            gorbg.SetActive(true); //활성화   
+            gorbg.SetActive(true); //활성화
+            it.SetActive(true);                       
             bg.Stop();
 
         }
