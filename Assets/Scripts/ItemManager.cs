@@ -13,6 +13,8 @@ public class ItemManager : MonoBehaviour
     float createTime = 0; //생성시간 
     float currentTime; // 흐르는 시간 (현재시간)
     // Start is called before the first frame update
+
+    static int count;
     void Start()
     {
         createTime = Random.Range(1f, 30f);
@@ -24,7 +26,8 @@ public class ItemManager : MonoBehaviour
         currentTime += Time.deltaTime; //currentTime을 흐르게 한다(증가시킨다), deltaTime 을 넣어 진짜 시계처럼 흐르게 
         if (createTime < currentTime)               // 일정시간 < 흘러간 시간
         {
-
+            count++;
+            print("아이템 생성 : " + count);
 
             if (createTime <= 6)
             {
