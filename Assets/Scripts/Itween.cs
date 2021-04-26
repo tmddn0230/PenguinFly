@@ -10,8 +10,7 @@ public class Itween : MonoBehaviour
 
     RectTransform rt1;
     RectTransform rt2;
-    float currenTime;
-    int createTime = 1;
+   
 
     // Start is called before the first frame update
     void Start()
