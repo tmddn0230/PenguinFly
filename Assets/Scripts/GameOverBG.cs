@@ -9,4 +9,9 @@ public class GameOverBG : MonoBehaviour
     {
         SceneManager.LoadScene("YSW");
     }
+
+    public void OnClickRetryy()
+    {
+        SceneManager.LoadScene("SSYY");
+    }
 }

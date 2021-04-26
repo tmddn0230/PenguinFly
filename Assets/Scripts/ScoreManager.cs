@@ -23,7 +23,7 @@ public class ScoreManager : MonoBehaviour
     {
         if(currentScore >= 1000)
         {
-            SceneManager.LoadScene("Clear");
+            SceneManager.LoadScene("Loading");
         }
     }
 

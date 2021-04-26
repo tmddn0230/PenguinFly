@@ -8767,7 +8767,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d42a4f757a63b434dbfee41835d5d375, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0.7
+  speed: 2
 --- !u!1001 &1598299893
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14991,7 +14991,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 900828596}
         m_TargetAssemblyTypeName: GameOverBG, Assembly-CSharp
-        m_MethodName: OnClickRetry
+        m_MethodName: OnClickRetryy
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
