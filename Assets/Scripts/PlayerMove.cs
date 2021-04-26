@@ -18,6 +18,9 @@ public class PlayerMove : MonoBehaviour
     public GameObject enemyaudio;
     public GameObject fishaudio;
     public GameObject it;
+    public GameObject leftright;
+    int count = 0;
+    int countT;
     
    
 
@@ -33,13 +36,16 @@ public class PlayerMove : MonoBehaviour
         enemyaudio.SetActive(false);
         fishaudio.SetActive(false);
         it.SetActive(false);
+        leftright.SetActive(false);
         
     }
 
     // Update is called once per frame
     void Update()
     {
-
+        countT = count % 2;
+        if(countT == 0 )
+        {
         h = Input.GetAxis("Horizontal");
         dirh = Vector3.right * h;
         dirh.Normalize();
@@ -58,6 +64,33 @@ public class PlayerMove : MonoBehaviour
         dirh.y = yVelocity;
 
         cc.Move(dirh * speed * Time.deltaTime);
+        }
+        else
+        {
+
+            h = Input.GetAxis("Horizontal");
+            dirh = Vector3.right * h;
+            dirh.Normalize();
+
+            if (Input.GetButtonDown("Jump"))
+            {
+                if (cc.isGrounded == true) yVelocity = jumppower;
+
+                audio.SetActive(true);
+                AudioSource ad = audio.GetComponent<AudioSource>();
+                ad.Play();
+
+
+            }
+            yVelocity += gravity * Time.deltaTime;
+            dirh.y = yVelocity;
+            dirh.x = dirh.x * -1;
+
+            cc.Move(dirh * speed * Time.deltaTime);
+
+
+
+        }
       
 
     }
@@ -89,6 +122,19 @@ public class PlayerMove : MonoBehaviour
         }
 
     }
-       
-    
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.gameObject.name.Contains("Bullet"))
+        {
+            Destroy(other);
+            print("ÁÂ¿ì ¹ÝÀü!");
+            leftright.SetActive(true);
+            AudioSource lr;
+            lr = leftright.GetComponent<AudioSource>();
+            lr.Play();
+            count = count + 1;
+        }
+    }
+
+
 }

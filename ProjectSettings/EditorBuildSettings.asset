@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/CarToon.unity
     guid: 399a15ca4f780a74e8423bf05afbac64
+  - enabled: 1
+    path: Assets/Scenes/SSYY.unity
+    guid: a011f781862de364b8f303ef70d9c1c4
   m_configObjects: {}
