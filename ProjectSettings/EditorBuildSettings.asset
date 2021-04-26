@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Clear.unity
     guid: 9f838b4b9a2a51f45b002df722408751
+  - enabled: 1
+    path: Assets/Scenes/CarToon.unity
+    guid: 399a15ca4f780a74e8423bf05afbac64
   m_configObjects: {}

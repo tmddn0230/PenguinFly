@@ -66,7 +66,7 @@ public class TitleScene : MonoBehaviour
     }
     public void OnClickRetry()
     {
-        SceneManager.LoadScene("YSW");
+        SceneManager.LoadScene("CarToon");
     }
 
 }

@@ -5,7 +5,7 @@ using UnityEngine;
 public class Enermy : MonoBehaviour
 {
 
-    float speed;
+    public float speed;
     Vector3 dir;
     public GameObject[] models;
 
