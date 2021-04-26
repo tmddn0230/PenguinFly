@@ -61,34 +61,34 @@ public class PlayerMove : MonoBehaviour
       
 
     }
-        private void OnCollisionEnter(Collision collision)
+    private void OnCollisionEnter(Collision collision)
     {
-      
+
         if (collision.gameObject.name.Contains("Enermy"))
         {
             enemyaudio.SetActive(true);
             gorbg.SetActive(true); //È°¼ºÈ­
-            it.SetActive(true);                       
+            it.SetActive(true);
             bg.Stop();
 
         }
-        else if(collision.gameObject.name.Contains("Item"))
+        else if (collision.gameObject.name.Contains("Item"))
         {
             fishaudio.SetActive(true);
             AudioSource fa;
             fa = fishaudio.GetComponent<AudioSource>();
-            fa.Play();  
-          
-           
-            
-            
+            fa.Play();
+
+
+
+
         }
         else
         {
 
         }
-        
-       
-       
+
     }
+       
+    
 }
