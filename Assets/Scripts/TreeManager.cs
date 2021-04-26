@@ -46,22 +46,22 @@ public class TreeManager : MonoBehaviour
                 GameObject tree = Instantiate(treeFactory3);
                 tree.transform.position = transform.position;
             }
-            else if (createTime <= 8)
+            else if (createTime <= 9)
             {
                 GameObject tree = Instantiate(treeFactory4);
                 tree.transform.position = transform.position;
             }
-            else if (createTime <= 10)
+            else if (createTime <= 11)
             {
                 GameObject tree = Instantiate(treeFactory5);
                 tree.transform.position = transform.position;
             }
-            else if (createTime <= 12)
+            else if (createTime <= 13)
             {
                 GameObject tree = Instantiate(treeFactory6);
                 tree.transform.position = transform.position;
             }
-            else if (createTime <= 14)
+            else if (createTime <= 15)
             {
                 GameObject tree = Instantiate(treeFactory7);
                 tree.transform.position = transform.position;
@@ -74,7 +74,7 @@ public class TreeManager : MonoBehaviour
 
             currTime = 0;
 
-            createTime = Random.Range(1f, 10f);
+            createTime = Random.Range(1f, 15f);
         }
     }
 }
