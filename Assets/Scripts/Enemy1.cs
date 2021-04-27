@@ -29,7 +29,7 @@ public class Enemy1 : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        
+        collision.gameObject.SetActive(false);
 
     }
 }

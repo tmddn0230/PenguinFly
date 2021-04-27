@@ -8,6 +8,7 @@ public class AlianFire : MonoBehaviour
     GameObject bf;
     float currentTime;
     int randnum;
+    public GameObject target;
 
     // Start is called before the first frame update
     void Start()
@@ -18,6 +19,9 @@ public class AlianFire : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+       if( target.activeSelf != false )
+        {
+
         currentTime += Time.deltaTime;
         randnum = Random.Range(1, 3);
 
@@ -26,6 +30,7 @@ public class AlianFire : MonoBehaviour
         bf = Instantiate(bulletFactory);
         bf.transform.position = transform.position;
             currentTime = 0;
+        }
         }
         
     }

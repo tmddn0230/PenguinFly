@@ -21,11 +21,11 @@ public class ScoreManager1 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(currentScore >= 100)
+        if(currentScore >= 300)
         {
             alian.SetActive(true);
         }
-        if(currentScore >= 2000)
+        if(currentScore >= 500)
         {
             SceneManager.LoadScene("Clear");
         }

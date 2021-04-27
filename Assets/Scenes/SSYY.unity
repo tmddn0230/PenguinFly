@@ -1516,6 +1516,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletFactory: {fileID: 6979522409487529559, guid: da99055065962bd4e86f1518641e8472,
     type: 3}
+  target: {fileID: 1874017123}
 --- !u!1 &481427078
 GameObject:
   m_ObjectHideFlags: 0

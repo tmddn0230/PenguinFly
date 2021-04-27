@@ -10,9 +10,13 @@ public class AlianBullet : MonoBehaviour
 
     // Start is called before the first frame update
     void Start()
-    {
+    { 
+        
+
         target = GameObject.Find("Player");
-        speed = Random.Range(25, 30);
+        
+            speed = Random.Range(25, 30);
+
         dir = target.transform.position - transform.position;
         dir.Normalize();
 
