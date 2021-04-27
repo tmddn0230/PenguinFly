@@ -8460,6 +8460,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentScoreUI: {fileID: 1393721300}
   clearScoreUI: {fileID: 584286801}
+  alianGo: {fileID: 0}
 --- !u!4 &1695154801
 Transform:
   m_ObjectHideFlags: 0
@@ -9089,6 +9090,7 @@ MonoBehaviour:
   enemyaudio: {fileID: 1090655378}
   fishaudio: {fileID: 1812398556}
   it: {fileID: 945179688}
+  leftright: {fileID: 1812398556}
 --- !u!65 &1874017125
 BoxCollider:
   m_ObjectHideFlags: 0

@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1519602099803904784}
   - component: {fileID: 1519602099803904787}
   - component: {fileID: 1519602099803904786}
-  - component: {fileID: 1519602099803904797}
+  - component: {fileID: 8701997032511966051}
   - component: {fileID: 243570771251408177}
   m_Layer: 10
   m_Name: Enermy
@@ -101,7 +101,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 4.511709, y: 3.1829996, z: 6.167122}
   m_Center: {x: -0.48729503, y: 1.0914998, z: -0.19174576}
---- !u!114 &1519602099803904797
+--- !u!114 &8701997032511966051
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -110,7 +110,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1519602099803904796}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6b457105aaed47247be67f1410f1757b, type: 3}
+  m_Script: {fileID: 11500000, guid: 43c74b72a3f60ad4db96ca71fc86f0e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 50

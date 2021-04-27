@@ -21,7 +21,7 @@ public class ScoreManager1 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(currentScore >= 500)
+        if(currentScore >= 100)
         {
             alian.SetActive(true);
         }
