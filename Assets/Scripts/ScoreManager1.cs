@@ -8,8 +8,8 @@ public class ScoreManager1 : MonoBehaviour
 {
     int currentScore;
     public Text currentScoreUI;
-    static int clearScore = 500;
     public Text clearScoreUI;
+    public GameObject alian;
 
     // Start is called before the first frame update
     void Start()
@@ -21,6 +21,10 @@ public class ScoreManager1 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(currentScore >= 500)
+        {
+            alian.SetActive(true);
+        }
         if(currentScore >= 2000)
         {
             SceneManager.LoadScene("Clear");
@@ -41,12 +45,4 @@ public class ScoreManager1 : MonoBehaviour
 
     }
 
-    public void SetHighScore(int cs)
-    {
-        clearScore = cs;
-        clearScoreUI.text = "Clear Score: " + clearScore;
-
-
-
-    }
 }

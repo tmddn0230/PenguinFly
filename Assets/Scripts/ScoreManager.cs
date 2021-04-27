@@ -8,7 +8,6 @@ public class ScoreManager : MonoBehaviour
 {
     int currentScore;
     public Text currentScoreUI;
-    static int clearScore = 500;
     public Text clearScoreUI;
 
     // Start is called before the first frame update
@@ -41,12 +40,5 @@ public class ScoreManager : MonoBehaviour
 
     }
 
-    public void SetHighScore(int cs)
-    {
-        clearScore = cs;
-        clearScoreUI.text = "Clear Score: " + clearScore;
-
-
-
-    }
+   
 }

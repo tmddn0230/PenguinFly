@@ -18,6 +18,7 @@ public class PlayerMove : MonoBehaviour
     public GameObject enemyaudio;
     public GameObject fishaudio;
     public GameObject it;
+    int count = 0;
     
    
 
@@ -39,6 +40,8 @@ public class PlayerMove : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+
 
         h = Input.GetAxis("Horizontal");
         dirh = Vector3.right * h;
@@ -79,9 +82,6 @@ public class PlayerMove : MonoBehaviour
             fa = fishaudio.GetComponent<AudioSource>();
             fa.Play();
 
-
-
-
         }
         else
         {
@@ -89,6 +89,15 @@ public class PlayerMove : MonoBehaviour
         }
 
     }
-       
-    
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.gameObject.name.Contains("Bullet"))
+        {
+            print("ÁÂ¿ì ¹ÝÀü!!");
+            count++;
+        }
+    }
+
+
 }

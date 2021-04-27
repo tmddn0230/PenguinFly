@@ -12,7 +12,7 @@ public class AlianBullet : MonoBehaviour
     void Start()
     {
         target = GameObject.Find("Player");
-        speed = Random.Range(5, 8);
+        speed = Random.Range(25,30 );
         dir = target.transform.position - transform.position;
         dir.Normalize();
         
