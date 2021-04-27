@@ -15,20 +15,25 @@ public class ScoreManager : MonoBehaviour
     void Start()
     {
         //SetHighScore(PlayerPrefs.GetInt("CS"));
-       clearScoreUI.text = "Clear Score: " + 500;
+       clearScoreUI.text = "Clear Score: " + 1000;
     }
 
     // Update is called once per frame
     void Update()
     {
        
-        if(currentScore >= 500)
+        if(currentScore >= 1000)
         {
             SceneManager.LoadScene("Loading");
         }
+    if(Input.GetKeyDown(KeyCode.Alpha9))
+        {
+            currentScore = currentScore + 900;
+        }
     }
 
-    public void AddScore(int AddValue)
+
+public void AddScore(int AddValue)
     {
         currentScore += AddValue;
         currentScoreUI.text = "Score: " + currentScore;

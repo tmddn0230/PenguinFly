@@ -17,6 +17,9 @@ public class NextBt : MonoBehaviour
 
     public void OnClickRetry()
     {
-        SceneManager.LoadScene(3);
+
+        Application.Quit();   // 종료한다
+
     }
+
 }
