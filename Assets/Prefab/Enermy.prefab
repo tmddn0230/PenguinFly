@@ -99,8 +99,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2.4222746, y: 3.2638288, z: 4.277382}
-  m_Center: {x: -0.044875383, y: 1.1319141, z: -0.026622772}
+  m_Size: {x: 4.511709, y: 3.1829996, z: 6.167122}
+  m_Center: {x: -0.48729503, y: 1.0914998, z: -0.19174576}
 --- !u!114 &1519602099803904797
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -113,7 +113,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b457105aaed47247be67f1410f1757b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 500
+  speed: 50
   models:
   - {fileID: 2259583122286370681}
   - {fileID: 9211336292471299919}
@@ -148,7 +148,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: e70d76961f2b02347b3be8ddaeb2ec94, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: e70d76961f2b02347b3be8ddaeb2ec94, type: 3}
       propertyPath: m_RootOrder
@@ -245,7 +245,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 046c4c0126f8218488822a041479a121, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.918855
+      value: 0.64687085
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 046c4c0126f8218488822a041479a121, type: 3}
       propertyPath: m_LocalScale.y
@@ -257,7 +257,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 046c4c0126f8218488822a041479a121, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0
+      value: -0.3058
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 046c4c0126f8218488822a041479a121, type: 3}
       propertyPath: m_LocalPosition.y
@@ -346,7 +346,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: e97528df4fe58c34f9e5f67e794b409d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0
+      value: -0.9772
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: e97528df4fe58c34f9e5f67e794b409d, type: 3}
       propertyPath: m_LocalPosition.y
@@ -435,7 +435,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 0dbadadc30f9b7e40a97777e423e6689, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.09
+      value: -0.7247
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 0dbadadc30f9b7e40a97777e423e6689, type: 3}
       propertyPath: m_LocalPosition.y
