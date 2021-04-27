@@ -15,7 +15,7 @@ public class EnermyManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        createTime = Random.Range(1f, 6f);
+        createTime = Random.Range(1f, 3f);
     }
 
     // Update is called once per frame
@@ -26,22 +26,22 @@ public class EnermyManager : MonoBehaviour
         {
             
             
-            if (createTime <= 2 )
+            if (createTime <= 1 )
             {
                 GameObject item = Instantiate(enermyFactory);
                 item.transform.position = enermyManager.transform.position;
             }
-            else if(createTime <= 3 )
+            else if(createTime <= 1.5 )
             {
                 GameObject item = Instantiate(enermyFactory2);
                 item.transform.position = enermyManager.transform.position;
             }
-            else if(createTime <= 4)
+            else if(createTime <= 2)
             {
                 GameObject item = Instantiate(enermyFactory3);
                 item.transform.position = enermyManager.transform.position;
             }
-            else if(createTime <= 5)
+            else if(createTime <= 2.5)
             {
                 GameObject item = Instantiate(enermyFactory4);
                 item.transform.position = enermyManager.transform.position;
@@ -53,7 +53,7 @@ public class EnermyManager : MonoBehaviour
                 item.transform.position = enermyManager.transform.position;
             }
             currentTime = 0;
-            createTime = Random.Range(1f, 6f);
+            createTime = Random.Range(1f, 3f);
 
 
         }

@@ -29,7 +29,7 @@ public class Loading : MonoBehaviour
     private void Update()
     {
         currTime += Time.deltaTime;
-        if (currTime > 2)
+        if (currTime > 1)
         {
             SceneManager.LoadScene("SSYY");
         }
