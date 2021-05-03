@@ -29,6 +29,7 @@ public class ScoreManager : MonoBehaviour
     if(Input.GetKeyDown(KeyCode.Alpha9))
         {
             currentScore = currentScore + 900;
+            currentScoreUI.text = "Score: " + currentScore;
         }
     }
 

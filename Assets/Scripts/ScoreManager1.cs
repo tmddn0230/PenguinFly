@@ -16,6 +16,7 @@ public class ScoreManager1 : MonoBehaviour
     {
         //SetHighScore(PlayerPrefs.GetInt("CS"));
        clearScoreUI.text = "Clear Score: " + 2000;
+        currentScoreUI.text = "Score: " + currentScore;
     }
 
     // Update is called once per frame
